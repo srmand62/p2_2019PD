@@ -1,0 +1,17 @@
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = 'SravAN' # Only 10 chars displayed.
+strategy_name = 'Analyzer - C Heavy'
+strategy_description = 'Analyzes Opponents moves and responds accordingly but prefers to collude if chance happens'
+    
+def move(my_history, their_history, my_score, their_score):
+    if their_history == 'cc':
+        return 'c'
+    else:
+        return 'b'
